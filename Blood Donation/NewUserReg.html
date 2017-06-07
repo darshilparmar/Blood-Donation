@@ -1,0 +1,37 @@
+<% @language="vbscript"%>
+<% Option explicit
+	dim conn,res
+	set conn=Server.CreateObject("ADODB.Connection")
+	conn.provider="Microsoft.Jet.OLEDB.4.0"
+	conn.open "C:\Inetpub\wwwroot\Blood Donation\Database\Donor.mdb"
+	set res=Server.CreateObject("ADODB.Recordset")
+	res.open "Donor",conn,0,3,2
+	res.movefirst
+	res.addnew
+	res("Name")=Request.Form("name")
+	res("Password")=Request.Form("password")
+	res("Email")=Request.Form("email")
+	res("MobileNo")=Request.Form("mobile")
+	res("OfficeNo")=Request.Form("office")
+	res("ResidenceNo")=Request.Form("resid")
+	res("Date")=Request.Form("date")
+	res("Month")=Request.Form("month")
+	res("Year")=Request.Form("year")
+	res("Gender")=Request.Form("gender")
+	
+	res("BloodGroup")=Request.Form("bloodgroup")
+	res("RHFactor")=Request.Form("rhfactor")
+	res("RegisteredAs")=Request.Form("regas")
+	res("Address")=Request.Form("address")
+	res("Country")=Request.Form("country")
+	res("State")=Request.Form("state")
+	res("City")=Request.Form("city")
+	res("Pin")=Request.Form("pin")
+	res("Bloodtime")=Request.Form("Bloodtime")
+	res.update
+	res.movenext
+	response.write("Signup Success")
+	response.redirect("home.html")
+%>
+
+

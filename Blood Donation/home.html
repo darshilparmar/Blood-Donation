@@ -1,0 +1,144 @@
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+    </head>
+
+    <body bgcolor="" border="5">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	 <!-- Navbar goes here --> 
+	&nbsp&nbsp&nbsp<img src="photos/blood.jpg" height="150"   align="middle" border="5"></img>
+	 <!-- Modal Structure -->
+  
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><font face="Cooper Std Black" color="black">&nbsp&nbspRedDonor</font></img></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="collapsible.html">About Us</a></li>
+		<li><a class="modal-trigger" href="#modal2">Log Out </a></li>
+      </ul>
+    </div>
+  </nav>
+   
+        
+
+    <script>
+	    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+	</script>
+    <script>
+	 $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
+	
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h2>Searching Blood For?</h2>
+    </div>
+    <div class="modal-footer">
+	<a href="Seeker.asp" class=" modal-action modal-close waves-effect waves-green btn-flat">Seeker</a>
+      <a href="Donor.asp" class=" modal-action modal-close waves-effect waves-green btn-flat">Donor</a>
+	  
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h2>Are you sure?</h2>
+    </div>
+    <div class="modal-footer">
+	<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      <a href="login.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	  
+    </div>
+  </div>
+	   <div class="row">
+        <div class="col s6 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Donate Blood</span>
+             
+            </div>
+            <div class="card-action">
+             <a class="modal-trigger" href="#modal1">Search Blood</a>			 
+			 <a href="Compatibilitychart.html">Compatibility Chart</a>
+			 <a href="Elligibility.html">Eligibility</a>
+			 <a href="#">Donor's Platelets</a>
+			 <a href="DonationCamp.html">Add Donation Camps</a>
+			 <a href="ViewDonationCamp.asp">View Donation Camps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+	 
+	  
+	  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="banner1.jpg">
+        <div class="caption center-align">
+         
+        </div>
+      </li>
+      <li>
+        <img src="banner2.jpg">
+        <div class="caption left-align">
+         
+        </div>
+      </li>
+      <li>
+        <img src="banner3.jpg">
+        <div class="caption right-align">
+          
+        </div>
+      </li>
+      <li>
+        <img src="banner4.jpg">
+        <div class="caption center-align">
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">RedDonor</h5>
+                <p class="grey-text text-lighten-4">If you donate money, you give food. But if you donate blood, you give life</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="home.html">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">About US</a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+             Your one share may save a life
+            
+            </div>
+          </div>
+        </footer>
+	  
+    </body>
+  </html>
